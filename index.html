@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js" integrity="sha512-X7kCKQJMwapt5FCOl2+ilyuHJp+6ISxFTVrx+nkrhgplZozodT9taV2GuGHxBgKKpOJZ4je77OuPooJg9FJLvw==" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="well well-sm">
+              <form id="my-form" class="form-horizontal needs-validation" novalidate action="">
+              <fieldset>
+                <legend class="text-center">Inquiry</legend>
+        
+                <!-- Salutation input-->
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="salutation">Salutation</label>
+                    <div class="col-md-9">
+                        <select id="salutation" class="form-select" aria-label="Default select example" required>
+                            <option value="">Select your salutation</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mx.">Mx.</option>
+
+                          </select>
+
+                          <div class="invalid-feedback">
+                            Last name required
+                          </div>
+                    </div>
+                  </div>
+
+
+                <!-- First name input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="fname">First Name</label>
+                  <div class="col-md-9">
+                    <input id="fname" name="fname" type="text" placeholder="Your first name" class="form-control" required>
+                    <div class="invalid-feedback">
+                        First name required
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Last name input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="lname">Last Name</label>
+                  <div class="col-md-9">
+                    <input id="lname" name="lname" type="text" placeholder="Your last name" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Last name required
+                      </div>
+                  </div>
+                  </div>
+
+                <!-- Address input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="address">Address</label>
+                    <div class="col-md-9">
+                      <input id="address" name="address" type="text" placeholder="Your address" class="form-control" required>
+                      <div class="invalid-feedback">
+                        Address required
+                      </div>
+                    </div>
+                </div>  
+                
+                <!-- City input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="city">City</label>
+                    <div class="col-md-9">
+                      <input id="city" name="city" type="text" placeholder="Your city" class="form-control" required>
+                      <div class="invalid-feedback">
+                        City required
+                      </div>
+                    </div>
+                </div> 
+                
+                <!-- State input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="state">State</label>
+                    <div class="col-md-9">
+                    <input id="state" name="state" type="text" placeholder="Your state" class="form-control" required>
+                    <div class="invalid-feedback">
+                        State required
+                      </div>
+                    </div>
+                </div>  
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="zip">Zip</label>
+                    <div class="col-md-9">
+                    <input id="zip" name="zip" type="text" placeholder="Your zip code" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Zip code required
+                      </div>
+                    </div>
+                </div>  
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="pumber">Phone Number</label>
+                    <div class="col-md-9">
+                    <input id="pnumber" name="pnumber" type="tel" placeholder="Your phone number" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Phone number required
+                      </div>
+                    </div>
+                </div>  
+        
+                <!-- Email input-->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                  <div class="col-md-9">
+                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Email required
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Who input -->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="who">Who?</label>
+                    <div class="col-md-9">
+                      <input id="who" name="who" type="text" class="form-control" required>
+                      <div class="invalid-feedback">
+                        Who? required
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- What input -->
+                <div class="form-group">
+                  <label class="col-md-3 control-label" for="message">What?</label>
+                  <div class="col-md-9">
+                    <textarea maxlength="2000" class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5" required></textarea>
+                    <div class="invalid-feedback">
+                        What? required
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Where input -->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="where">Where?</label>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input id="wherecity" type="text" class="form-control" placeholder="City" aria-label="city" required>
+                      <div class="invalid-feedback">
+                        City required
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <input id="wherestate" type="text" class="form-control" placeholder="State" aria-label="state" required>
+                      <div class="invalid-feedback">
+                        State required
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- When input -->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="when">When?</label>
+                    <div class="col-md-9">
+                      <input id="when" name="when" type="date"  class="form-control">
+                    </div>
+                  </div>
+
+                <!-- Witness input -->
+
+                  <div class="form-group">
+                    <label for="seeAnotherFieldGroupWitness">Do you have a witness?</label>
+                    <div class="col-md-9">  
+                    <select class="form-control" id="seeAnotherFieldGroupWitness">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select> </div>
+                 
+                  </div>
+                  <div class="form-group" id="otherFieldGroupDivWitness">
+                   <div class="row">
+                    <div class="col-4">
+                      <label for="otherField1Witness">First name:</label>
+                      <input  type="text" class="form-control w-100" id="otherField1Witness" required>
+                      <div class="invalid-feedback">
+                        Witness first name required
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <label for="otherField2">Last name:</label>
+                      <input type="text" class="form-control w-100" id="otherField2Witness" required>
+                      <div class="invalid-feedback">
+                        Witness last name required
+                      </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="otherField3">Phone number:</label>
+                        <input type="tel" class="form-control w-100" id="otherField3Witness" required>
+                        <div class="invalid-feedback">
+                            Witness phone required
+                          </div>
+                      </div>
+                     
+                   </div>
+                   </div>
+
+                <!-- Attorney input -->
+                   <div class="form-group">
+                    <label for="seeAnotherFieldGroupAttorney">Do you have an attorney?</label>
+                    <div class="col-md-9" >
+                        <select class="form-control" id="seeAnotherFieldGroupAttorney">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                      </select>
+
+                    </div>
+                
+                  </div>
+                  <div class="form-group" id="otherFieldGroupDivAttorney">
+                   <div class="row">
+                    <div class="col-4">
+                      <label for="otherField1Attorney">Attorney's name:</label>
+                      <input type="text" class="form-control w-100" id="otherField1Attorney" required>
+                      <div class="invalid-feedback">
+                        Attorney's name required
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <label for="otherField2Attorney">Attorney's practice name:</label>
+                      <input type="text" class="form-control w-100" id="otherField2Attorney" required>
+                      <div class="invalid-feedback">
+                        Attorney's practice name required
+                      </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="otherField3Attorney">Website:</label>
+                        <input type="text" class="form-control w-100" id="otherField3Attorney" required>
+                        <div class="invalid-feedback">
+                            Attorney's website required
+                          </div>
+                      </div>
+                     
+                   </div>
+                </div>
+
+        
+                <!-- Form actions -->
+                <div class="form-group">
+                  <div class="col-md-12 text-right">
+                    <button id="submitButton" type="button" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>    <script src="script.js"> </script>
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
