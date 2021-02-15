@@ -54,9 +54,7 @@ if (day < 10) day = "0" + day;
 var today = year + "-" + month + "-" + day;       
 document.getElementById("when").value = today;
 
-function showMessage() {
-    console.log("hi");
-}
+
 (function () {
     'use strict'
   
@@ -81,9 +79,6 @@ function showMessage() {
 
   $(document).ready(function() {
 
-    $("#spanishButton").click(function() {
-        console.log("hi");
-    })
 
     $("#submitButton").click(function() {
   
